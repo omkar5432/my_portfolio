@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+#home
+{
+    background-image: url("technology-computer-creative-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 250px;
+    color: white;
+    
+}
+
+nav
+{
+    margin-bottom: -20px !important; 
+    font-size: 20px;
+    color: white;
+}
+
+p
+{
+    font-size: 15px;
+}
+
+#edu
+{
+    background-color: #3b5998;
+    padding: 20px;
+    box-shadow: 4px 5px 7px 5px black;
+    color: white;
+}
+#icon
+{
+    font-size: 50px !important;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+body{
+    background: #e3edf7;
+    height: 100vh;
+
+}
+/*  porgress bar css*/
+.Skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+.inner{
+    height: 120px; 
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);  
+}
+
+#num{
+    font-weight: 600;
+    color: #555;
+
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray:472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+#icon2{
+	float:right;
+	margin-left:20px;
+	font-size:20px;
+}
+
+#top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+
