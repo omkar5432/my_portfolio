@@ -12,35 +12,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!--navbar section start-->
     <nav class="navbar navbar-inverse" id="top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href=" " style="color: blueviolet;">Portfolio</a>
-            </div>
-            <div class="collapse navbar-collapse" id="#mynavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#other">Other Activities</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                   <!-- <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href=" ">Courses <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#other">Other Activities</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>-->
-                </ul>
-            </div>
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" class="navbar-toggle" data-target="#mydiv">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="mydiv" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#otheractivities">Other Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
         </div>
     </nav>
 
@@ -56,10 +47,10 @@
     <div class="container-fluid" id="about">
         <center><h2>About Us</h2></center>
             <div class="row">
-                <div class="col-sm-5 col-xs-5 col-md-5">
-                    <img src="Photo_.jpg" alt="" width="250px" height="250px">
+                <div class="col-sm-3 col-md-6 col-lg-4">
+                 <center>   <img src="Photo_.jpg" alt="" width="350px" height="400px">
                 </div>
-                <div class="col-sm-5 col-xs-5 col-md-5">
+                <div class="col-sm-9 col-md-6 col-lg-8">
                     <p>Hello, I'm Omkar Thube from Ahmednagar. 
                         I did my Graduation in BCA Science with 60%, 
                         and currently Pursuing MCA in JSPM NTC Pune, 
@@ -277,26 +268,27 @@ data-target="#myModal">Click to Contact</button>
     <!--footer section end-->
     
     <script>
-     $(window).scroll(function(){
-        if ($(this).scrollTop() > 200) {
-            $('#top').addClass('fixed');
-        } else {
-            $('#top').removeClass('fixed');
-        }
-    });
+        $(window).scroll(function(){
+       if ($(this).scrollTop() > 200) {
+           $('#top').addClass('fixed');
+       } else {
+           $('#top').removeClass('fixed');
+       }
+   });
+   </script>
 
-    let num = document.getElementById("num");
-    let counter = 0;
-    setInterval(()=>{
-        if(counter == 75){
-            clearInterval();
-        }else{
-            counter += 1;
-        num.innerHTML = counter + "%";
-        }
-        
-    }, 25)
-    </script>
+<script> let num = document.getElementById("num");
+   let counter = 0;
+   setInterval(()=>{
+       if(counter == 75){
+           clearInterval();
+       }else{
+           counter += 1;
+       num.innerHTML = counter + "%";
+       }
+       
+   }, 25)</script>
+
     
     
 </body>
